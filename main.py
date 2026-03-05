@@ -5,6 +5,7 @@ genai.configure(api_key="YOUR_GEMINI_API_KEY")
 
 model = genai.GenerativeModel("gemini-pro")
 
+
 # Example IoT activity data
 iot_data = """
 8:00 AM - User woke up

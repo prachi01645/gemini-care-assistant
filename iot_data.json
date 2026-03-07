@@ -1,0 +1,11 @@
+{
+  "user": "elderly_patient_01",
+  "activity_log": [
+    {"time": "08:00", "activity": "woke_up"},
+    {"time": "08:30", "activity": "breakfast"},
+    {"time": "09:00", "activity": "movement_detected"},
+    {"time": "10:00", "activity": "no_movement"},
+    {"time": "11:00", "activity": "no_movement"},
+    {"time": "12:00", "activity": "no_movement"}
+  ]
+}

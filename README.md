@@ -3,6 +3,22 @@
 AI-powered prototype that analyzes IoT activity logs and generates health or safety alerts using Google's Gemini AI.
 
 This project demonstrates how smart-home sensor data can be converted into meaningful insights using Large Language Models.
+## Demo
+
+Example activity data:
+
+[
+ {"time": "08:00", "activity": "woke_up"},
+ {"time": "08:30", "activity": "breakfast"},
+ {"time": "09:00", "activity": "movement_detected"},
+ {"time": "10:00", "activity": "no_movement"},
+ {"time": "11:00", "activity": "no_movement"}
+]
+
+Example system output:
+
+AI Alert:
+User inactive for extended period. Check assistance.
 
 ---
 

@@ -176,6 +176,13 @@ Example:
 This prototype demonstrates how AI models like Gemini can interpret IoT activity signals and transform them into meaningful insights for healthcare and assisted living systems.
 
 ---
+## Future Improvements
+
+- Real-time IoT sensor integration
+- Mobile notifications for caregivers
+- Web dashboard for monitoring activity
+- Machine learning anomaly detection
+- Integration with health monitoring devices
 
 ## Author
 

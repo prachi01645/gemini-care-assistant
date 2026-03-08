@@ -3,6 +3,11 @@
 AI-powered prototype that analyzes IoT activity logs and generates health or safety alerts using Google's Gemini AI.
 
 This project demonstrates how smart-home sensor data can be converted into meaningful insights using Large Language Models.
+
+![Python](https://img.shields.io/badge/Python-3.9-blue)
+![Status](https://img.shields.io/badge/Status-Prototype-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 ## Demo
 
 Example activity data:

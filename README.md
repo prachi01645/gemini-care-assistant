@@ -4,11 +4,10 @@ AI-powered prototype that analyzes IoT activity logs and generates health or saf
 
 This project demonstrates how smart-home sensor data can be converted into meaningful insights using Large Language Models.
 
-<p align="center">
-<img src="https://img.shields.io/badge/Python-3.9-blue">
-<img src="https://img.shields.io/badge/Status-Prototype-orange">
-<img src="https://img.shields.io/badge/License-MIT-green">
-</p>
+![Python](https://img.shields.io/badge/Python-3.9-blue)
+![Status](https://img.shields.io/badge/Status-Prototype-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 ## Demo
 
 Example activity data:

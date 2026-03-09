@@ -35,7 +35,8 @@ IoT Sensors → Activity Data → AI Analysis → Alert
 3. Python reads the data
 4. Gemini AI analyzes the activity pattern
 5. The system prints an alert if needed
-   ## Quick Start
+   
+## Quick Start
 
 Follow these steps to run the prototype.
 

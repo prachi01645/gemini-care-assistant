@@ -6,7 +6,7 @@ genai.configure(api_key="YOUR_GEMINI_API_KEY")
 model = genai.GenerativeModel("gemini-pro")
 
 # Load IoT data from JSON
-with openopen("data/iot_data.json") as file:
+with with open("data/iot_data.json") as file:
     data = json.load(file)
 
 activity_log = data["activity_log"]

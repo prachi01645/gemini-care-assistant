@@ -9,24 +9,6 @@ This project demonstrates how smart-home sensor data can be converted into meani
 ![Status](https://img.shields.io/badge/Status-Prototype-orange) 
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-## Demo
-
-Example activity data:
-
-[
- {"time": "08:00", "activity": "woke_up"},
- {"time": "08:30", "activity": "breakfast"},
- {"time": "09:00", "activity": "movement_detected"},
- {"time": "10:00", "activity": "no_movement"},
- {"time": "11:00", "activity": "no_movement"}
-]
-
-Example system output:
-
-AI Alert:
-User inactive for extended period. Check assistance.
-
----
 
 ## Project Overview
 
@@ -53,6 +35,49 @@ IoT Sensors → Activity Data → AI Analysis → Alert
 3. Python reads the data
 4. Gemini AI analyzes the activity pattern
 5. The system prints an alert if needed
+   ## Quick Start
+
+Follow these steps to run the prototype.
+
+### 1. Clone the repository
+
+git clone https://github.com/prachi01645/gemini-care-assistant.git
+
+### 2. Move into the project folder
+
+cd gemini-care-assistant
+
+### 3. Install dependencies
+
+pip install -r requirements.txt
+
+### 4. Run the program
+
+python src/main.py
+
+## Requirements
+
+- Python 3.9+
+- pip
+
+## Demo
+
+Example activity data:
+
+[
+ {"time": "08:00", "activity": "woke_up"},
+ {"time": "08:30", "activity": "breakfast"},
+ {"time": "09:00", "activity": "movement_detected"},
+ {"time": "10:00", "activity": "no_movement"},
+ {"time": "11:00", "activity": "no_movement"}
+]
+
+Example system output:
+
+AI Alert:
+User inactive for extended period. Check assistance.
+
+---
    
 ## System Architecture
 

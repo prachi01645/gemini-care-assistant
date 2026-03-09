@@ -2,7 +2,7 @@ import json
 import google.generativeai as genai
 
 # Configure Gemini API
-genai.configure(api_key="YOUR_GEMINI_API_KEY")
+genai.configure(api_key="AIzaSyDRfG1RVkxV6PPaY8zS3EUk4S1BDlHh8gk")
 
 # Load IoT health data
 with open("data/iot_data.json", "r") as file:

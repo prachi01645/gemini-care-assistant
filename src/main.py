@@ -2,27 +2,30 @@ import json
 import google.generativeai as genai
 
 # Configure Gemini API
-API_KEY = "YOUR_GEMINI_API_KEY"
-genai.configure(api_key=API_KEY)
+genai.configure(api_key="YOUR_GEMINI_API_KEY")
 
-# Load IoT data
+# Load IoT health data
 with open("data/iot_data.json", "r") as file:
     iot_data = json.load(file)
 
+print("IoT Data Loaded:")
+print(iot_data)
+
 # Create prompt for Gemini
 prompt = f"""
-You are a healthcare AI assistant.
+You are a healthcare assistant.
 
-Here is patient IoT health data:
+Patient IoT health data:
 {iot_data}
 
 Analyze the data and give simple health advice.
 """
 
-# Use Gemini model
+# Initialize Gemini model
 model = genai.GenerativeModel("gemini-pro")
 
 response = model.generate_content(prompt)
 
-print("----- Gemini Care Assistant -----")
+print("\n----- Gemini Health Advice -----")
 print(response.text)
+

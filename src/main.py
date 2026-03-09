@@ -1,28 +1,28 @@
-import google.generativeai as genai
 import json
+import google.generativeai as genai
 
-genai.configure(api_key="YOUR_GEMINI_API_KEY")
+# Configure Gemini API
+API_KEY = "YOUR_GEMINI_API_KEY"
+genai.configure(api_key=API_KEY)
 
-model = genai.GenerativeModel("gemini-pro")
- 
-# Load IoT data from JSON
-with open("data/iot_data.json") as file:
-    data = json.load(file)
+# Load IoT data
+with open("data/iot_data.json", "r") as file:
+    iot_data = json.load(file)
 
-activity_log = data["activity_log"]
-
+# Create prompt for Gemini
 prompt = f"""
-You are an intelligent care assistant.
+You are a healthcare AI assistant.
 
-Analyze the following activity log and detect unusual patterns.
+Here is patient IoT health data:
+{iot_data}
 
-Activity Log:
-{activity_log}
-
-Explain if an alert should be triggered.
+Analyze the data and give simple health advice.
 """
+
+# Use Gemini model
+model = genai.GenerativeModel("gemini-pro")
 
 response = model.generate_content(prompt)
 
-print("AI Alert:")
+print("----- Gemini Care Assistant -----")
 print(response.text)

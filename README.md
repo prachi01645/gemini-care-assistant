@@ -10,7 +10,7 @@
 
 AI-powered prototype that analyzes IoT activity logs and generates health or safety alerts using Google's Gemini AI.
 
-This project demonstrates how smart-home sensor data can be converted into meaningful insights using Large Language Models
+This project demonstrates how smart-home sensor data can be converted into meaningful insights using Large Language Model
 
 
 ## Project Overview
@@ -38,6 +38,12 @@ IoT Sensors → Activity Data → AI Analysis → Alert
 3. Python reads the data
 4. Gemini AI analyzes the activity pattern
 5. The system prints an alert if needed
+
+## Dashboard Demo
+
+Run the interactive dashboard:
+
+streamlit run src/dashboard.py
    
 ## Quick Start
 

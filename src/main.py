@@ -1,28 +1,106 @@
-import google.generativeai as genai
 import json
+import google.generativeai as genai
 
-genai.configure(api_key="YOUR_GEMINI_API_KEY")
+# --------------------------------
+# Configure Gemini API
+# --------------------------------
+genai.configure(api_key="AIzaSyCP1Zk7oo2YMPeZkUBgtHyJWtpMy0TAN8I")
 
-model = genai.GenerativeModel("gemini-pro")
-
-# Load IoT data from JSON
-with openopen("data/iot_data.json") as file:
+# --------------------------------
+# Load IoT Data
+# --------------------------------
+with open("data/iot_data.json", "r") as file:
     data = json.load(file)
 
-activity_log = data["activity_log"]
+print("\nIoT Data Loaded:")
+print(data)
 
+activities = data["activity_log"]
+
+# --------------------------------
+# Pattern Detection Layer
+# --------------------------------
+no_movement_count = 0
+alert = None
+reason = ""
+confidence = 0
+
+for entry in activities:
+    if entry["activity"] == "no_movement":
+        no_movement_count += 1
+    else:
+        no_movement_count = 0
+
+    if no_movement_count >= 3:
+        alert = "Possible prolonged inactivity detected."
+        reason = "3 consecutive 'no_movement' signals detected in IoT activity log."
+        confidence = 85
+        break
+
+if alert is None:
+    alert = "No abnormal behaviour detected."
+    reason = "Normal activity patterns observed."
+    confidence = 95
+
+print("\nSystem Alert:", alert)
+print("Reason:", reason)
+print("Confidence Score:", str(confidence) + "%")
+
+# --------------------------------
+# Role Selection
+# --------------------------------
+role = input("\nEnter role (caregiver / family / supervisor): ")
+
+if role == "caregiver":
+    role_instruction = "Provide clear caregiving advice and next steps."
+
+elif role == "family":
+    role_instruction = "Explain the situation simply and calmly without causing worry."
+
+elif role == "supervisor":
+    role_instruction = "Provide a detailed analysis of the detected pattern."
+
+else:
+    role_instruction = "Explain the situation clearly."
+
+# --------------------------------
+# AI Prompt
+# --------------------------------
 prompt = f"""
-You are an intelligent care assistant.
+You are an intelligent elderly care assistant.
 
-Analyze the following activity log and detect unusual patterns.
+IoT Activity Data:
+{activities}
 
-Activity Log:
-{activity_log}
+Detected Alert:
+{alert}
 
-Explain if an alert should be triggered.
+Reason:
+{reason}
+
+Confidence Score:
+{confidence}%
+
+User Role:
+{role}
+
+Instructions:
+{role_instruction}
+
+Explain the situation clearly.
+Do not provide medical diagnosis.
+Focus only on interpreting the activity data and suggesting safe actions.
 """
+
+# --------------------------------
+# Gemini AI Model
+# --------------------------------
+model = genai.GenerativeModel("models/gemini-flash-latest")
 
 response = model.generate_content(prompt)
 
-print("AI Alert:")
+# --------------------------------
+# Output
+# --------------------------------
+print("\n--- AI Care Assistant Explanation ---")
 print(response.text)

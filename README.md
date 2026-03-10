@@ -38,12 +38,6 @@ IoT Sensors → Activity Data → AI Analysis → Alert
 3. Python reads the data
 4. Gemini AI analyzes the activity pattern
 5. The system prints an alert if needed
-
-## Dashboard Demo
-
-Run the interactive dashboard:
-
-streamlit run src/dashboard.py
    
 ## Quick Start
 
@@ -88,6 +82,11 @@ AI Alert:
 User inactive for extended period. Check assistance.
 
 ---
+## Dashboard Demo
+
+Run the interactive dashboard:
+
+streamlit run src/dashboard.py
    
 ## System Architecture
 

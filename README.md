@@ -1,13 +1,16 @@
+![Python](https://img.shields.io/badge/python-3.10+-blue)
+![Status](https://img.shields.io/badge/status-prototype-green)
+![License](https://img.shields.io/badge/license-MIT-yellow)
+![AI](https://img.shields.io/badge/AI-Gemini-orange)
+![IoT](https://img.shields.io/badge/IoT-monitoring-blue)
+![GSoC](https://img.shields.io/badge/Google%20Summer%20of%20Code-Project-blue)
+
+
 # Gemini Intelligent Care Assistant
 
 AI-powered prototype that analyzes IoT activity logs and generates health or safety alerts using Google's Gemini AI.
 
-This project demonstrates how smart-home sensor data can be converted into meaningful insights using Large Language Models.
-
-
-![Python](https://img.shields.io/badge/Python-3.9-blue)
-![Status](https://img.shields.io/badge/Status-Prototype-orange) 
-![License](https://img.shields.io/badge/License-MIT-green)
+This project demonstrates how smart-home sensor data can be converted into meaningful insights using Large Language Models
 
 
 ## Project Overview

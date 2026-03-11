@@ -139,20 +139,6 @@ streamlit run src/dashboard.py
 
 ---
 
-# Project Structure
-
-gemini-care-assistant/
-│
-├── src/
-│   ├── main.py
-│   ├── dashboard.py
-│
-├── data/
-│   └── iot_data.json
-│
-├── requirements.txt
-└── README.md
-
 ## Author
 
 ## Prachi Patel

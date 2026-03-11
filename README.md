@@ -133,6 +133,12 @@ streamlit run src/dashboard.py
 
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/fe9b9e2d-c46a-40ea-9ed3-417a606b08eb" />
 
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/b2b4e775-5283-4dcc-a86f-dcf0916993e5" />
+
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/74e7e6eb-ed79-48af-98d8-41f59d2fbb94" />
+
+
+
    
 ## System Architecture
 

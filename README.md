@@ -117,6 +117,12 @@ AI Alert:
 User inactive for extended period. Check assistance.
 
 ---
+## 📸 Output Example
+
+Below is an example of the AI analyzing IoT activity data.
+
+<img width="1891" height="316" alt="image" src="https://github.com/user-attachments/assets/4481d6ee-78d8-4e48-9e3a-ad2d28d9b5f0" />
+
 ## Dashboard Demo
 
 Run the interactive dashboard:
@@ -154,9 +160,19 @@ streamlit run src/dashboard.py
                +---------------+
 
 ---
-## Why this matters for Catrobat
+## Future Improvements
 
-This project demonstrates how AI assistants could support learning platforms like Pocket Code by helping analyze user activity and providing intelligent feedback.
+• Real IoT sensor integration
+• Mobile caregiver alerts
+• Machine learning anomaly detection
+• Streamlit dashboard improvements
+• Integration with smart home devices
+
+## Relevance to Catrobat
+
+This project demonstrates how AI assistants can analyze user activity and generate intelligent insights.
+
+Such AI-powered analysis could help educational tools like Pocket Code understand student learning patterns and provide personalized feedback.
 
 ## Author
 

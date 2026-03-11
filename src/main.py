@@ -1,11 +1,11 @@
 import json
 import google.generativeai as genai
 
-<<<<<<< HEAD
+
 # --------------------------------
 # Configure Gemini API
 # --------------------------------
-genai.configure(api_key="AIzaSyCP1Zk7oo2YMPeZkUBgtHyJWtpMy0TAN8I")
+genai.configure(api_key="GEMINI_API_KEY")
 
 # --------------------------------
 # Load IoT Data
@@ -105,7 +105,7 @@ response = model.generate_content(prompt)
 # --------------------------------
 print("\n--- AI Care Assistant Explanation ---")
 print(response.text)
-=======
+
 # Configure Gemini API
 genai.configure(api_key="AIzaSyDRfG1RVkxV6PPaY8zS3EUk4S1BDlHh8gk")
 
@@ -134,4 +134,4 @@ response = model.generate_content(prompt)
 print("\n----- Gemini Health Advice -----")
 print(response.text)
 
->>>>>>> 2ea15b926419142eb538323bcb68c74dadeb7abf
+

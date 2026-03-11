@@ -4,7 +4,7 @@ import pandas as pd
 from google import genai
 
 # Gemini API
-client = genai.Client(api_key="AIzaSyCP1Zk7oo2YMPeZkUBgtHyJWtpMy0TAN8I")
+client = genai.Client(api_key="GEMINI_API_KEY")
 
 st.set_page_config(page_title="IoT Care Assistant", layout="wide")
 

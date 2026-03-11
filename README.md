@@ -83,6 +83,22 @@ python src/main.py
 - Python 3.9+
 - pip
 
+##  API Key Setup
+
+This project uses the Gemini API.
+
+1. Get a free API key from Google AI Studio.
+
+2. Set the environment variable.
+
+Windows:
+
+setx GEMINI_API_KEY "your_api_key_here"
+
+Mac/Linux:
+
+export GEMINI_API_KEY="your_api_key_here"
+
 ## Demo
 
 Example activity data:

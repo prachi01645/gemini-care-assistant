@@ -154,6 +154,9 @@ streamlit run src/dashboard.py
                +---------------+
 
 ---
+## Why this matters for Catrobat
+
+This project demonstrates how AI assistants could support learning platforms like Pocket Code by helping analyze user activity and providing intelligent feedback.
 
 ## Author
 

@@ -7,7 +7,6 @@
 ![License](https://img.shields.io/badge/license-MIT-yellow)
 
 
-
 # Gemini Intelligent Care Assistant
 
 # Gemini IoT Care Assistant
@@ -36,7 +35,6 @@ Example scenario:
 
 # Features
 
-HEAD
 - IoT activity data ingestion
 - Pattern detection for abnormal behavior
 - Explainable alerts with confidence scores
@@ -52,6 +50,13 @@ IoT Sensors → Activity Data → AI Analysis → Alert
 3. Python reads the data
 4. Gemini AI analyzes the activity pattern
 5. The system prints an alert if needed
+
+##  Tech Stack
+
+- Python
+- Google Gemini API
+- Streamlit
+- JSON
    
 ## Quick Start
 
@@ -131,17 +136,25 @@ streamlit run src/dashboard.py
                | AI Alert      |
                | Output        |
                +---------------+
----
-
-## Project Structure
-
-gemini-care-assistant/
-
-main.py – main program that runs the AI analysis
-iot_data.json – sample IoT activity dataset
-README.md – project documentation
->>>>>>> 2ea15b926419142eb538323bcb68c74dadeb7abf
 
 ---
 
 # Project Structure
+
+gemini-care-assistant/
+│
+├── src/
+│   ├── main.py
+│   ├── dashboard.py
+│
+├── data/
+│   └── iot_data.json
+│
+├── requirements.txt
+└── README.md
+
+## Author
+
+## Prachi Patel
+
+Computer Science student passionate about Artificial Intelligence, software engineering, and building intelligent applications. Currently exploring AI APIs, cloud technologies, and real-world problem solving through software projects.

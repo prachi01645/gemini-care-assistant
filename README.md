@@ -121,7 +121,7 @@ User inactive for extended period. Check assistance.
 
 Below is an example of the AI analyzing IoT activity data.
 
-<img width="1891" height="316" alt="image" src="https://github.com/user-attachments/assets/4481d6ee-78d8-4e48-9e3a-ad2d28d9b5f0" />
+<img width="1018" height="316" alt="image" src="https://github.com/user-attachments/assets/4481d6ee-78d8-4e48-9e3a-ad2d28d9b5f0" />
 
 ## Dashboard Demo
 
@@ -131,7 +131,7 @@ streamlit run src/dashboard.py
 
 ## 📊 Dashboard Preview
 
-<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/fe9b9e2d-c46a-40ea-9ed3-417a606b08eb" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/fe9b9e2d-c46a-40ea-9ed3-417a606b08eb" />
 
    
 ## System Architecture

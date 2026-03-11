@@ -128,6 +128,11 @@ Below is an example of the AI analyzing IoT activity data.
 Run the interactive dashboard:
 
 streamlit run src/dashboard.py
+
+## 📊 Dashboard Preview
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/fe9b9e2d-c46a-40ea-9ed3-417a606b08eb" />
+
    
 ## System Architecture
 

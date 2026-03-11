@@ -2,10 +2,10 @@ import json
 import os
 from google import genai
 
-# Initialize Gemini client
+# Create Gemini client
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
-# Load IoT health data
+# Load IoT data
 with open("data/iot_data.json", "r") as file:
     iot_data = json.load(file)
 
@@ -20,7 +20,7 @@ Patient IoT Data:
 Analyze the data and give simple health advice.
 """
 
-# Generate response
+# Generate AI response
 response = client.models.generate_content(
     model="gemini-2.5-flash",
     contents=prompt
@@ -28,5 +28,3 @@ response = client.models.generate_content(
 
 print("\n--- Gemini Care Assistant ---")
 print(response.text)
-
-

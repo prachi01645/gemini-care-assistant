@@ -174,9 +174,13 @@ streamlit run src/dashboard.py
 ## Future Improvements
 
 • Real IoT sensor integration
+
 • Mobile caregiver alerts
+
 • Machine learning anomaly detection
+
 • Streamlit dashboard improvements
+
 • Integration with smart home devices
 
 ## Relevance to Catrobat

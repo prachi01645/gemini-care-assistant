@@ -43,7 +43,17 @@ Example scenario:
 
 The project follows a simple pipeline:
 
-IoT Sensors → Activity Data → AI Analysis → Alert
+# System Flow
+
+IoT Sensor Data
+       ↓
+Data Processing Layer
+       ↓
+Gemini AI Interpretation
+       ↓
+Alert Detection
+       ↓
+Role-Based Dashboard
 
 1. IoT sensors generate activity logs
 2. The logs are stored in a JSON file

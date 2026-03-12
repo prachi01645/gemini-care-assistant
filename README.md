@@ -117,7 +117,7 @@ AI Alert:
 User inactive for extended period. Check assistance.
 
 ---
-## 📸 Output Example
+##  Output Example
 
 Below is an example of the AI analyzing IoT activity data.
 
@@ -129,7 +129,7 @@ Run the interactive dashboard:
 
 streamlit run src/dashboard.py
 
-## 📊 Dashboard Preview
+## Dashboard Preview
 
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/fe9b9e2d-c46a-40ea-9ed3-417a606b08eb" />
 

@@ -43,7 +43,7 @@ Example scenario:
 
 The project follows a simple pipeline:
 
-# System Flow
+## System Flow
 
 #### IoT Sensor Data → Data Processing Layer → Gemini AI Interpretation → Alert Detection → Role-Based Dashboard
 

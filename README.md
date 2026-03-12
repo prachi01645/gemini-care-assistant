@@ -33,6 +33,35 @@ Example scenario:
 
 ---
 
+## System Architecture
+        +------------------+
+        |  IoT Sensors     |
+        | (Motion, Door)   |
+        +---------+--------+
+                  |
+                  v
+         +----------------+
+         | iot_data.json  |
+         | Activity Logs  |
+         +-------+--------+
+                 |
+                 v
+          +-------------+
+          |  main.py    |
+          | Data Reader |
+          +------+------+
+                 |
+                 v
+    +-----------------------------+
+    | Gemini AI Analysis Engine   |
+    +--------------+--------------+
+                   |
+                   v
+           +---------------+
+           | AI Alert      |
+           | Output        |
+           +---------------+
+
 # Features
 
 - IoT activity data ingestion
@@ -148,38 +177,6 @@ streamlit run src/dashboard.py
 ### - All alerts require human verification.
 
 
-
-   ## System Architecture
-
-            +------------------+
-            |  IoT Sensors     |
-            | (Motion, Door)   |
-            +---------+--------+
-                      |
-                      v
-             +----------------+
-             | iot_data.json  |
-             | Activity Logs  |
-             +-------+--------+
-                     |
-                     v
-              +-------------+
-              |  main.py    |
-              | Data Reader |
-              +------+------+
-                     |
-                     v
-        +-----------------------------+
-        | Gemini AI Analysis Engine   |
-        +--------------+--------------+
-                       |
-                       v
-               +---------------+
-               | AI Alert      |
-               | Output        |
-               +---------------+
-
----
 ## Future Improvements
 
 • Real IoT sensor integration

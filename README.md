@@ -141,10 +141,16 @@ streamlit run src/dashboard.py
 
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/74e7e6eb-ed79-48af-98d8-41f59d2fbb94" />
 
+## Ethical AI Principles
+
+This system does NOT provide medical diagnosis.
+
+The AI only interprets activity patterns and provides contextual insights.
+All alerts require human verification.
 
 
-   
-## System Architecture
+
+   ## System Architecture
 
             +------------------+
             |  IoT Sensors     |

@@ -143,8 +143,7 @@ streamlit run src/dashboard.py
 
 ## Ethical AI Principles
 
-### - his system does NOT provide medical diagnosis.
-
+### - This system does NOT provide medical diagnosis.
 ### - The AI only interprets activity patterns and provides contextual insights.
 ### - All alerts require human verification.
 

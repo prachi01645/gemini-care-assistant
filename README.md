@@ -53,6 +53,8 @@ The project follows a simple pipeline:
 4. Gemini AI analyzes the activity pattern
 5. The system prints an alert if needed
 
+##### This pipeline converts raw IoT activity signals into contextual insights and alerts using AI-powered interpretation while  ensuring role-based access for caregivers, supervisors, and family members.
+
 ##  Tech Stack
 
 - Python

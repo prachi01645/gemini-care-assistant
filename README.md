@@ -3,7 +3,7 @@
  
 ![AI](https://img.shields.io/badge/AI-Gemini-orange)
 ![IoT](https://img.shields.io/badge/IoT-monitoring-blue)
-![GSoC](https://img.shields.io/badge/Google%20Summer%20of%20Code-Project-blue)
+![GSoC](https://img.shields.io/badge/Google%20Summer%20of%20Code-Project-blue) 
 ![License](https://img.shields.io/badge/license-MIT-yellow)
 
 

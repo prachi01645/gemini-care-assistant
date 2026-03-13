@@ -198,6 +198,6 @@ Such AI-powered analysis could help educational tools like Pocket Code understan
 
 ## Author
 
-## Prachi Patel
+## Prachi Ghoghari
 
 Computer Science student passionate about Artificial Intelligence, software engineering, and building intelligent applications. Currently exploring AI APIs, cloud technologies, and real-world problem solving through software projects.

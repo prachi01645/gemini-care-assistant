@@ -198,6 +198,14 @@ Such AI-powered analysis could help educational tools like Pocket Code understan
 
 ## Author
 
-## Prachi Ghoghari
+## Author
 
-Computer Science student passionate about Artificial Intelligence, software engineering, and building intelligent applications. Currently exploring AI APIs, cloud technologies, and real-world problem solving through software projects.
+**Prachi Ghoghari**  
+
+B.Sc. Information Technology Student | Aspiring AI & Software Developer  
+
+Developer of the *Gemini IoT Care Assistant* prototype. This project explores how AI models such as the Gemini API can interpret IoT activity data and convert raw sensor signals into meaningful insights for caregivers while maintaining ethical and explainable AI principles.
+
+This prototype was developed as part of my preparation for the Google Summer of Code (GSoC) 2026 proposal under the Catrobat open-source organization.
+
+GitHub: https://github.com/prachi01645

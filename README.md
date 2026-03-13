@@ -13,7 +13,8 @@
 
 An AI-powered intelligent care assistant that interprets IoT activity data and generates context-aware insights using the Gemini API.
 
-This project demonstrates how responsible AI can support caregivers and families by transforming raw IoT activity signals into understandable alerts and explanations.
+This project demonstrates how AI can transform raw IoT activity signals into
+human-understandable insights while maintaining ethical and human-centered decision making.
 
 This project demonstrates how smart-home sensor data can be converted into meaningful insights using Large Language Model
 

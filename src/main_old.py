@@ -3,7 +3,7 @@ import os
 from google import genai
 
 # Create Gemini client
-client = genai.Client(api_key=os.getenv("python src/main.py"))
+client = genai.Client(api_key=os.getenv("AIzaSyAUi_KEvhdx1H01a6T3JYRqiXsUBDf3JZY"))
 
 # Load IoT data
 with open("data/iot_data.json", "r") as file:

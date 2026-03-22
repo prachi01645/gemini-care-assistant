@@ -6,4 +6,4 @@ model = genai.GenerativeModel("gemini-pro")
 
 response = model.generate_content("Say hello")
 
-print(response.text)
+print(response.text) 

@@ -2,23 +2,23 @@ import json
 import requests
 import os
 
-# 🔐 Get API key safely
+#  Get API key safely
 API_KEY = os.getenv("GEMINI_API_KEY")
 
-# ❗ If not set, fallback (you can temporarily paste key here)
+#  If not set, fallback (you can temporarily paste key here)
 if not API_KEY:
     API_KEY = "PASTE_YOUR_NEW_KEY_HERE"
 
-# 📂 Load IoT data
+#  Load IoT data
 with open("iot_data.json", "r") as file:
     data = json.load(file)
 
 print("\n📊 Data Loaded\n")
 
-# 🌐 Gemini API URL
+#  Gemini API URL
 url = f"https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key={API_KEY}"
 
-# 🧠 Function to call Gemini
+#  Function to call Gemini
 def ask_gemini(prompt):
     payload = {
         "contents": [
@@ -38,7 +38,7 @@ def ask_gemini(prompt):
     except:
         return "Error in response. Check API key or request."
 
-# 📝 Daily Summary
+#  Daily Summary
 summary_prompt = f"""
 You are an AI care assistant.
 
@@ -51,23 +51,23 @@ Data:
 
 summary = ask_gemini(summary_prompt)
 
-print("📝 Daily Summary:")
+print(" Daily Summary:")
 print(summary)
 
-# ⚠️ Alert detection
+#  Alert detection
 alert = any(entry["activity"] == "no_movement" for entry in data)
 
 if alert:
-    print("\n⚠️ Alert: No movement detected!")
+    print("\n Alert: No movement detected!")
 else:
-    print("\n✅ Activity looks normal")
+    print("\n Activity looks normal")
 
-# 💬 Interactive assistant
+#  Interactive assistant
 while True:
-    user_query = input("\n💬 Ask something (type 'exit' to quit): ")
+    user_query = input("\n Ask something (type 'exit' to quit): ")
 
     if user_query.lower() == "exit":
-        print("👋 Exiting")
+        print(" Exiting")
         break
 
     prompt = f"""
@@ -85,4 +85,4 @@ while True:
     """
 
     answer = ask_gemini(prompt)
-    print("\n🤖", answer)
+    print("\n", answer)

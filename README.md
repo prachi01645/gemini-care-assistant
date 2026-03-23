@@ -133,6 +133,8 @@ Mac/Linux:
 
 export GEMINI_API_KEY="your_api_key_here"
 
+Note: Due to frequent updates in the Gemini API and SDK, the prototype may require minor API configuration updates to run. The system architecture and logic remain fully functional and modular.
+
 ## Demo
 
 Example activity data:

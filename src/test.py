@@ -1,6 +1,6 @@
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyBfyZbzOj5sRHW1vevYSR_aTRGWDp3o6C0")
+genai.configure(api_key="AIzaSyCCBpObDpncoozfjGag2iO_D2ZwUIzCQ_g")
 
 model = genai.GenerativeModel("gemini-pro")
 

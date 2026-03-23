@@ -1,72 +1,88 @@
 import json
+import requests
 import os
-import google.generativeai as genai
 
-# 🔑 Setup Gemini API
-genai.configure(api_key="AIzaSyBfyZbzOj5sRHW1vevYSR_aTRGWDp3o6C0")
-print("USING KEY:", "AIzaSyBfyZbzOj5sRHW1vevYSR_aTRGWDp3o6C0")
+# 🔐 Get API key safely
+API_KEY = os.getenv("GEMINI_API_KEY")
+
+# ❗ If not set, fallback (you can temporarily paste key here)
+if not API_KEY:
+    API_KEY = "PASTE_YOUR_NEW_KEY_HERE"
 
 # 📂 Load IoT data
 with open("iot_data.json", "r") as file:
     data = json.load(file)
 
-print("\n📊 IoT Activity Data Loaded Successfully!\n")
+print("\n📊 Data Loaded\n")
 
-# 🧠 STEP 1: Daily Summary
+# 🌐 Gemini API URL
+url = f"https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key={API_KEY}"
+
+# 🧠 Function to call Gemini
+def ask_gemini(prompt):
+    payload = {
+        "contents": [
+            {
+                "parts": [
+                    {"text": prompt}
+                ]
+            }
+        ]
+    }
+
+    response = requests.post(url, json=payload)
+    result = response.json()
+
+    try:
+        return result["candidates"][0]["content"]["parts"][0]["text"]
+    except:
+        return "Error in response. Check API key or request."
+
+# 📝 Daily Summary
 summary_prompt = f"""
 You are an AI care assistant.
 
-Summarize the user's daily activity in simple and clear language.
-
-Rules:
-- Do NOT give medical advice
-- Keep it short and easy
-- Mention if activity is normal or unusual
+Summarize this activity in simple terms.
+Do NOT give medical advice.
 
 Data:
 {data}
 """
 
-summary_response = model.generate_content(summary_prompt)
-summary_text = summary_response.text
+summary = ask_gemini(summary_prompt)
 
 print("📝 Daily Summary:")
-print(summary_text)
+print(summary)
 
-# ⚠️ STEP 2: Simple Alert Detection
-alert = False
-
-for entry in data:
-    if entry["activity"] == "no_movement":
-        alert = True
+# ⚠️ Alert detection
+alert = any(entry["activity"] == "no_movement" for entry in data)
 
 if alert:
-    print("\n⚠️ Alert: No activity detected for a long period. Please check.")
+    print("\n⚠️ Alert: No movement detected!")
 else:
-    print("\n✅ Status: Activity looks normal.")
+    print("\n✅ Activity looks normal")
 
-# 💬 STEP 3: Ask Assistant (INTERACTIVE PART)
+# 💬 Interactive assistant
 while True:
-    user_query = input("\n💬 Ask something about activity (or type 'exit'): ")
+    user_query = input("\n💬 Ask something (type 'exit' to quit): ")
 
     if user_query.lower() == "exit":
-        print("👋 Exiting assistant. Stay safe!")
+        print("👋 Exiting")
         break
 
     prompt = f"""
-    You are a helpful AI care assistant.
+    You are a helpful care assistant.
 
     Rules:
-    - Do NOT give medical diagnosis
-    - If unsure, suggest contacting a caregiver
-    - Keep answers simple and clear
+    - No medical diagnosis
+    - Keep answers simple
 
-    IoT Data:
+    Data:
     {data}
 
-    User Question:
+    Question:
     {user_query}
     """
 
-    response = model.generate_content(prompt)
-    print("\n🤖 Assistant:", response.text)
+    answer = ask_gemini(prompt)
+    print("\n🤖", answer)

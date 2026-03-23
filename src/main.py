@@ -13,7 +13,7 @@ if not API_KEY:
 with open("iot_data.json", "r") as file:
     data = json.load(file)
 
-print("\n📊 Data Loaded\n")
+print("\n Data Loaded\n")
 
 #  Gemini API URL
 url = f"https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key={API_KEY}"
